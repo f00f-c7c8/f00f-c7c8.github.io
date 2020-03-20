@@ -1,0 +1,34 @@
+---
+layout: archive
+---
+
+{{ content }}
+
+<p>
+This is a blog curated by the non-profit organization Lazy val. We are a group of programmers with experience from all areas of programming, and as such, we feel a responsibility to enlighten others about best practices and common programming pitfalls.
+
+In the first few posts, we plan to cover the following areas:
+</p>
+<ul>
+	<li>Naming conventions</li>
+	<li>Indentation</li>
+	<li>Mutable vs immutable state</li>
+	<li>Declaration keywords</li>
+	<li>Memory allocation strategies</li>
+	<li>Readability vs maintainability</li>
+	<li>Character sets, encodings and locales</li>
+	<li>Micro-optimizations</li>
+</ul>
+<h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3>
+
+{% if paginator %}
+  {% assign posts = paginator.posts %}
+{% else %}
+  {% assign posts = site.posts %}
+{% endif %}
+
+{% for post in posts %}
+  {% include archive-single.html %}
+{% endfor %}
+
+{% include paginator.html %}
