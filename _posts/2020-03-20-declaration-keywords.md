@@ -78,11 +78,13 @@ for (int x : arr) {
 System.out.println(String.format("The sum is %d.", sum));
 ```
 
+## Motivation
+
 Why do some people argue that the keywords `val` and `final` should be used, one might ask? Here are some arguments we have heard:
 
 **You can't accidentally change a value.**
 
-In our experience, it's much common that you want to change a value at a later stage. This means you can't add new code without updating the declaration. This leads to bad diffs in version control, and of course more work.
+In our experience, it's much more common that you want to change a value at a later stage. This means you can't add new code without updating the declaration. This leads to bad diffs in version control, and of course more work.
 
 **It self-documents the code since the reader understands what will and will not change.**
 
