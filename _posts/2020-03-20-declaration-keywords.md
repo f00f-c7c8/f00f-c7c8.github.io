@@ -40,7 +40,7 @@ for (int x : arr) {
 System.out.println(String.format("The sum is %d.", sum));
 ```
 
-The code in all three languages exhibit the same problem: declaration of the two variables (`arr` and `sum`) are different. In Java, some of the difference is necessary due to the type being different – this could be overcome by storing the sum in an array of size 1, but we will cover that at another time.
+The code in all three languages exhibits the same problem: declaration of the two variables (`arr` and `sum`) are different. In Java, some of the difference is necessary due to the type being different – this could be overcome by storing the sum in an array of size 1, but we will cover that at another time.
 
 It's easy to understand why people are confused. Questions arise such as:
 * Why are some variables final?
