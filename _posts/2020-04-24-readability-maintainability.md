@@ -71,6 +71,10 @@ When compilers & linkers started allowing longer variable names, people quickly 
 
 If the variables have generic names, such as `data`, `a` and `i` then you can re-use these names without declaring new variables. An additional bonus of this is that you reduce the stack usage, minimizing the risk for stack overflows.
 
+### Learn by example
+
+A good example of a great balance between name length and readable semantics is the naming conventions of the [BLAS](http://www.netlib.org/blas/blasqr.pdf) library. Thanks to one of our early readers for pointing this out!
+
 # Commenting
 
 The comment about Heap's algorithm is obvious for those who already know said algorithm and thus redundant. For those who don't, however, the comment only causes confusion and is therefore just a distraction. So, it doesn't really help anyone.
